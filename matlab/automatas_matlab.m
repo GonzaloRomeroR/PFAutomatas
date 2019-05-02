@@ -60,6 +60,7 @@ b_h = b_eq_h * r_h ^ 2 / R_d ^ 2;
 % Balanceo
 n_bal = 3;
 m_l = 65000;
+m_l_min = 15000;
 k_bal = 10;
 
 % Traslacion
