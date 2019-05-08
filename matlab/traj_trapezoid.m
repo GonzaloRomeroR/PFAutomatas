@@ -1,25 +1,32 @@
 function [x_points, y_points] = traj_trapezoid(pos_ini, pos_fin , charged, y_vector, to_ship)
 
-x_edge = 40;
-y_edge = 40;
-container_size_x = 200;
-container_size_y = 200;
-y_ini = 400;
+x_edge = 2;
+y_edge = 2;
+container_size_x = 2.44;
+container_size_y = 2.79;
+y_ini = 4;
 y_platform = 0;
-y_ship_botton = -400;
-y_safe = 200;
+y_ship_botton = -10;
+y_safe = 2;
 
 x_ini = 0;
 y_fin = 0;
 
-x_positions = [ 1, 2, 3, 4, 5, 6, 7, 8] * container_size_x - container_size_x / 2;
+distancia_carriles = 4;
+
+position_vector = zeros(length(y_vector));
+for i = 1:length(y_vector)
+    position_vector(i) = i;
+end
+
+x_positions = position_vector * container_size_x - container_size_x / 2;
 
 if(pos_ini == 1)
-    x_ini = -3 * 200;
+    x_ini = -3 * distancia_carriles;
 elseif(pos_ini == 2)
-    x_ini = -2 * 200;
+    x_ini = -2 * distancia_carriles;
 elseif(pos_ini == 3)
-    x_ini = -1 * 200;
+    x_ini = -1 * distancia_carriles;
 end
 
 
@@ -41,8 +48,8 @@ else
     end
 end
 
-obstacules_x = zeros(1, 20);
-obstacules_y = zeros(1, 20);
+obstacules_x = zeros(1, 40);
+obstacules_y = zeros(1, 40);
 
 obstacules_x(1) = x_edge;
 obstacules_y(1) = y_edge;

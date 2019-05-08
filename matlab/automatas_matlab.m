@@ -5,7 +5,8 @@
 %%
 % Traslacion
 
-h_contenedor = 2.5;
+h_contenedor = 2.79;
+b_contenedor = 2.44;
 min_pos_x = -30;
 max_pos_x = 50;
 v_max_t = 4; % +/-
