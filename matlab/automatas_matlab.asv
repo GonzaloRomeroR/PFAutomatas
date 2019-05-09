@@ -14,7 +14,7 @@ a_max_t = 1; % +/-
 min_pos_y = -20;
 max_pos_y = 40;
 y_t0 = 45;% <------- cambiar para que sea identica
-x_t0 = 49;
+x_t0 = 0;
 y_sb = 15;
 g = 9.80665;
 m_c = 50000;%15000;    <------- cambiar para que sea identica
@@ -87,13 +87,6 @@ Ksia_h =  M_h * w_pos_h ^ 3;
 
 % Limites
 
-left_limit_1 = -30;
-right_limit_1 = 50;
-top_limit_1 = 40;
-bottom_limit_1 = -20;
+left_
 
-left_limit_0 = -32;
-right_limit_0 = 52;
-top_limit_0 = 42;
-bottom_limit_0 = -22;
 
