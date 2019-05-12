@@ -37,18 +37,14 @@ end
 %Final position
 
 if (pos_fin ~= 1)
-    if (pos_fin == length(y_vector))
+    if (pos_fin == length(pos_vector))
         if (y_vector(pos_fin) > y_vector(pos_fin - 1))
             y_fin = y_vector(pos_fin) * container_size_y + y_safe + y_ship_botton;
         else
             y_fin = y_vector(pos_fin - 1) * container_size_y + y_safe + y_ship_botton;
         end
     else
-        if (y_vector(pos_fin) > y_vector(pos_fin - 1) && y_vector(pos_fin) > y_vector(pos_fin + 1))
-            y_fin = y_vector(pos_fin) * container_size_y + y_safe + y_ship_botton;
-        else
-            y_fin = max(y_vector(pos_fin - 1), y_vector(pos_fin + 1)) * container_size_y + y_safe + y_ship_botton;
-        end
+        if (y_vector(pos_fin) > y_vector(pos_fin - 1) && y_vector(pos_fin) > )
     end
 else
     if (y_edge > (y_vector(pos_fin) + y_ship_botton))
