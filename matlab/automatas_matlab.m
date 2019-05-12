@@ -13,11 +13,11 @@ v_max_t = 4; % +/-
 a_max_t = 1; % +/-
 min_pos_y = -20;
 max_pos_y = 40;
-y_t0 = 45;% <------- cambiar para que sea identica
+y_t0 = 45;
 x_t0 = 0;
 y_sb = 15;
 g = 9.80665;
-m_c = 50000;%15000;    <------- cambiar para que sea identica
+m_c = 50000;%15000;
 m_cont = 2000;
 m_i = 65000;
 m_min = m_c + m_cont;
@@ -96,4 +96,9 @@ left_limit_0 = -32;
 right_limit_0 = 52;
 top_limit_0 = 42;
 bottom_limit_0 = -22;
+
+% Carriles
+
+pos_fin = 5;
+pos_ini = 1;
 

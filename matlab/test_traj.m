@@ -20,7 +20,7 @@
 
 pos_ini = 1;
 pos_fin = 5;
-container_vector = [8, 12, 12, 4, 5, 8, 1, 3];
+container_vector = [8, 12, 12, 4, 5, 8, 1, 3, 7, 1, 5, 6];
 charged = 1;
 to_ship = 1;
 %[x_points, y_points] = traj(pos_ini, pos_fin, charged, container_vector, to_ship);
@@ -31,8 +31,8 @@ figure(1)
 
 %hold on 
 plot(x_points_trap, y_points_trap, 'r')
-hold on
+%hold on
 
-plot_crane(x_points_trap(4), y_points_trap(4))
+%plot_crane(x_points_trap(4), y_points_trap(4))
 
 

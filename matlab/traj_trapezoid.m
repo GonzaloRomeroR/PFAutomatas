@@ -95,14 +95,12 @@ x_points(4) = obstacules_x(length(obstacules_x));
 y_points(4) = obstacules_y(length(obstacules_y));
 
 max_steep = -100;
-%first_obstacule = [0, 0];
 angle = 0;
 
 for i=1:length(obstacules_x)
     steep = (obstacules_y(i) - y_points(1)) / (obstacules_x(i) - x_points(1));
     if (steep > max_steep)
         max_steep = steep;
-        %first_obstacule = [obstacules_x(i), obstacules_y(i)];
         angle = atan2(obstacules_y(i) - y_points(1), obstacules_x(i) - x_points(1));
     end
     
@@ -112,29 +110,19 @@ y_max = max(obstacules_y);
 x_points(2) = x_points(1) + (y_max - y_points(1)) / tan(angle); 
 y_points(2) = y_max;
 
-%disp(obstacules_x)
-%disp(obstacules_y)
-
-%disp(first_obstacule)
-
-
 min_steep = 100;
-%first_obstacule = [0, 0];
 angle = 0;
 
 for i=1:length(obstacules_x)
     steep = (- obstacules_y(i) + y_points(4)) / (- obstacules_x(i) + x_points(4));
     if (steep < min_steep)
         min_steep = steep;
-        first_obstacule = [obstacules_x(i), obstacules_y(i)];
         angle = atan2(- obstacules_y(i) + y_points(4), - obstacules_x(i) + x_points(4));
     end
     
 end
 y_max = max(obstacules_y);
 
-
-disp(first_obstacule)
 x_points(3) =   x_points(4) + (y_max - y_points(4)) / tan(angle); 
 y_points(3) = y_max;
 
