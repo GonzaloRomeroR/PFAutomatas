@@ -1,0 +1,58 @@
+//controller(ACTUAL := y, SET_POINT := 5,KP := 50,TN := 1000,TV := 0);
+//y := controller.Y;
+
+vt_corrected := vt_set;
+
+Itheta := Itheta + GVL.theta * GVL.Tp;
+ 
+
+IF GVL.balancing = 1 THEN
+
+	p := 1.3;
+	Kd_bal := ((GVL.M_t + GVL.m_l) / (GVL.M_t + GVL.m_l)) * GVL.lh - GVL.M_t * GVL.g / ((GVL.M_t + GVL.m_l) * p * p);
+	Kp_bal := 2 * p * (GVL.lh * (GVL.M_t + GVL.m_l) / (GVL.M_t + GVL.m_l) - Kd_bal);
+	
+	//integral_theta(IN := - GVL.theta, TM := 10);
+	//theta_integral := integral_theta.OUT;
+	
+	theta_integral := 0 - Itheta;
+	
+	vt_balancing := - GVL.theta * Kd_bal + theta_integral * Kp_bal;
+	vt_corrected := vt_set - vt_balancing * balancing_gain;
+	
+ELSE
+	vt_corrected := vt_set;
+END_IF
+
+error_vt := vt_corrected - GVL.dxt;
+error_vh := vh_set - GVL.dlh;
+
+
+Ierror_vt := Ierror_vt + error_vt * GVL.T2;
+IIerror_vt := IIerror_vt + Ierror_vt * GVL.T2;
+
+Ierror_vh := Ierror_vh + error_vh * GVL.T2;
+IIerror_vh := IIerror_vh + Ierror_vh * GVL.T2;
+
+
+GVL.Tmt :=  GVL.ba_t * error_vt;// GVL.Ksia_t * IIerror_vt + GVL.Ksa_t * Ierror_vt +
+GVL.Tmh := GVL.ba_h * error_vh; // GVL.Ksia_h * IIerror_vh + GVL.Ksa_h * Ierror_vh +
+
+
+//integral_h_set(IN := vh_set, TM := 10);
+//theta_h_set := integral_h_set.OUT;
+
+//integral_h_measured(IN := GVL.dlh, TM := 10);
+//theta_h_measured := integral_h_set.OUT;
+
+//integral_t_set(IN := vt_corrected, TM := 10);
+//theta_t_set := integral_t_set.OUT;
+
+//integral_t_measured(IN := GVL.dxt, TM := 10);
+//theta_t_measured := integral_t_set.OUT;
+
+//controller_t(ACTUAL := theta_t_measured, SET_POINT := theta_t_set,KP := GVL.Ksa_t,TN := 1/GVL.Ksia_t/GVL.Ksa_t,TV := GVL.ba_t/GVL.Ksa_t);
+//controller_h(ACTUAL := theta_h_measured, SET_POINT := theta_h_set,KP := GVL.Ksa_h,TN := 1/GVL.Ksia_h/GVL.Ksa_h,TV := GVL.ba_h/GVL.Ksa_h);
+
+//Tmt := controller_t.Y;
+//Tmh := controller_h.Y;
