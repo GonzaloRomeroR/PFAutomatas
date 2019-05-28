@@ -135,10 +135,6 @@ for i=1:length(obstacules_x)
 end
 y_max = max(obstacules_y);
 
-x_points(4)
-y_max
-y_points(4)
-angle
 
 
 x_points(3) =   x_points(4) + (y_max - y_points(4)) / tan(angle); 
