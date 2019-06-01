@@ -51,8 +51,8 @@ if (pos_fin ~= 1)
         end
     end
 else
-    if (y_edge > (y_vector(pos_fin) + y_ship_botton))
-        y_fin = y_ship_botton + y_safe;
+    if (y_edge > (y_vector(pos_fin)  * container_size_y + y_ship_botton))
+        y_fin = y_safe + y_edge;
     else
         y_fin = y_vector(pos_fin) * container_size_y + y_safe + y_ship_botton;
     end
@@ -64,7 +64,7 @@ obstacules_x = zeros(1, 40);
 obstacules_y = zeros(1, 40);
 
 obstacules_x(1) = x_edge;
-obstacules_y(1) = y_edge;
+obstacules_y(1) = y_edge + y_safe;
 
 counter = 2;
 
@@ -119,7 +119,11 @@ for i=1:length(obstacules_x)
 end
 y_max = max(obstacules_y);
 
-x_points(2) = x_points(1) + (y_max - y_points(1)) / tan(angle); 
+if (tan(angle) ~= 0)
+    x_points(2) = x_points(1) + (y_max - y_points(1)) / tan(angle); 
+else
+    x_points(2) = x_points(1) + container_size_x;
+end
 y_points(2) = y_max;
 
 min_steep = 100;
@@ -135,9 +139,13 @@ for i=1:length(obstacules_x)
 end
 y_max = max(obstacules_y);
 
+tan(angle)
 
-
-x_points(3) =   x_points(4) + (y_max - y_points(4)) / tan(angle); 
+if (tan(angle) ~= 0)
+    x_points(3) =   x_points(4) + (y_max - y_points(4)) / tan(angle);
+else 
+    x_points(3) = x_points(4);
+end
 y_points(3) = y_max;
 
 
@@ -145,6 +153,10 @@ y_points(3) = y_max;
 
 x_points(2) = x_points(2) - container_size_x;
 x_points(3) = x_points(3) + container_size_x;
+
+if x_points(3) > x_points(4)
+    x_points(3) = x_points(4);
+end
 
 
 

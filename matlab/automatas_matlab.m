@@ -99,6 +99,9 @@ bottom_limit_0 = -22;
 
 % Carriles
 
-pos_fin = 5;
+pos_fin = 4;
 pos_ini = 1;
+
+
+container_vector = [8, 1, 1, 1, 5, 8, 1, 3, 7, 1, 5, 6];
 
