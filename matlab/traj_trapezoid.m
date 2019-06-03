@@ -7,7 +7,7 @@ container_size_y = 2.79;
 y_ini = 4;
 y_platform = 0;
 y_ship_botton = -10;
-y_safe = 2;
+y_safe = container_size_y;
 
 x_ini = 0;
 y_fin = 0;
