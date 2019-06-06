@@ -14,10 +14,24 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (unknown)"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
    sodipodi:docname="grua6.svg">
   <defs
      id="defs2">
+    <marker
+       inkscape:isstock="true"
+       style="overflow:visible"
+       id="marker10075"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="DotM">
+      <path
+         transform="scale(0.4) translate(7.4, 1)"
+         style="fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1;fill:#0000ff;fill-opacity:1"
+         d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
+         id="path10073" />
+    </marker>
     <marker
        inkscape:isstock="true"
        style="overflow:visible"
@@ -28,7 +42,7 @@
        inkscape:stockid="DotM">
       <path
          transform="scale(0.4) translate(7.4, 1)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1;fill:#0000ff;fill-opacity:1"
          d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
          id="path2752" />
     </marker>
@@ -44,7 +58,7 @@
       <path
          id="path1307"
          d="M -2.5,-1.0 C -2.5,1.7600000 -4.7400000,4.0 -7.5,4.0 C -10.260000,4.0 -12.5,1.7600000 -12.5,-1.0 C -12.5,-3.7600000 -10.260000,-6.0 -7.5,-6.0 C -4.7400000,-6.0 -2.5,-3.7600000 -2.5,-1.0 z "
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1;fill:#000000;fill-opacity:1"
+         style="fill-rule:evenodd;stroke:#0000ff;stroke-width:1pt;stroke-opacity:1;fill:#0000ff;fill-opacity:1"
          transform="scale(0.4) translate(7.4, 1)" />
     </marker>
     <marker
@@ -146,16 +160,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="796.84939"
-     inkscape:cy="597.31268"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="418.96294"
+     inkscape:cy="833.42696"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1366"
-     inkscape:window-height="704"
-     inkscape:window-x="0"
-     inkscape:window-y="27"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -165,7 +179,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -713,8 +727,8 @@
        x="30.085953"
        y="8.8834496" />
     <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 39.756341,105.60829 V 17.6"
+       style="fill:none;stroke:#ff0000;stroke-width:0.21663785px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 39.756341,76.602084 V 17.6"
        id="path2238"
        inkscape:connector-curvature="0" />
     <text
@@ -847,18 +861,13 @@
        id="path2314-7"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.16500001;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:0.165, 0.165;stroke-dashoffset:0;stroke-opacity:1"
-       d="M 168.14271,100.61302 V 50.209894"
-       id="path2476"
-       inkscape:connector-curvature="0" />
-    <path
-       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#DotM)"
+       style="fill:none;stroke:#0000ff;stroke-width:0.46500002;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:1.39500005,0.46500002;marker-end:url(#DotM);marker-start:url(#DotM);stroke-dashoffset:0"
        d="M 39.756341,105.60829 V 76.602084"
        id="path2480"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;marker-end:url(#marker2754)"
-       d="M 168.14271,50.209894 V 100.61302"
+       style="fill:none;stroke:#0000ff;stroke-width:0.465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.395, 0.465;stroke-dashoffset:0;stroke-opacity:1;marker-start:url(#marker10075);marker-end:url(#marker2754)"
+       d="M 168.00239,50.443755 V 100.84689"
        id="path2492"
        inkscape:connector-curvature="0" />
     <text

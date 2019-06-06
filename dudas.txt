@@ -1,0 +1,9 @@
+Preguntas autómatas:
+
+Manual hasta obtener una altura mínima ? No dejar pasar a modo automático si no se tiene dicha altura?
+Información sobre altura o sobre cantidad de contenedores?
+Nivel cero no debería actuar en el caso de que el ángulo fuese muy grande?
+Utilizamos Euler mejorado para realizar las integraciones
+Limites por software en el nivel 1
+Hemos puestos las funciones en el CODESYS fuera de los niveles, eso está bien?
+Tiempos apropiados de ejecuación de cada nivel	
