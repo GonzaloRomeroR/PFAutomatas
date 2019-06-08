@@ -103,5 +103,5 @@ pos_fin = 4;
 pos_ini = 1;
 
 
-container_vector = [8, 1, 1, 1, 5, 8, 1, 3, 7, 1, 5, 6];
+container_vector = [2, 6, 4, 1, 5, 8, 1, 3, 7, 1, 5, 6];
 

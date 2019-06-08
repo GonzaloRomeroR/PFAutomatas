@@ -51,10 +51,14 @@ if (pos_fin ~= 1)
         end
     end
 else
-    if (y_edge > (y_vector(pos_fin)  * container_size_y + y_ship_botton))
-        y_fin = y_safe + y_edge;
+    if (y_edge < (y_vector(pos_fin + 1)  * container_size_y + y_ship_botton))
+        y_fin = y_vector(pos_fin + 1) * container_size_y + y_safe + y_ship_botton;
     else
-        y_fin = y_vector(pos_fin) * container_size_y + y_safe + y_ship_botton;
+        if (y_edge > (y_vector(pos_fin)  * container_size_y + y_ship_botton))
+            y_fin = y_safe + y_edge;
+        else
+            y_fin = y_vector(pos_fin) * container_size_y + y_safe + y_ship_botton;
+        end
     end
 end
 
