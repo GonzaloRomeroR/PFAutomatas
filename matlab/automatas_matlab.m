@@ -31,7 +31,7 @@ angle_max = 0.6108;
 
 %%
 % Izaje
-lambda = 0.90;
+lambda = 0.91;
 K_w_h = 1800000;
 b_w_h = 30000;
 R_d = 0.75;
