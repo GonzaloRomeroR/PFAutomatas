@@ -68,7 +68,7 @@ k_bal = 10;
 
 w_t    = b_t / M_t; 
 n_t    = 2.5;
-w_pos_t = 2 * w_t;
+w_pos_t = 5 * w_t;
 
 ba_t   =  M_t * n_t * w_pos_t;
 Ksa_t  =  M_t * n_t * w_pos_t^2;
@@ -79,7 +79,7 @@ Ksia_t =  M_t * w_pos_t ^ 3;
 
 w_h    = b_h / M_h; 
 n_h    = 3;
-w_pos_h = 2 * w_h;
+w_pos_h = 5 * w_h;
 
 ba_h   =  M_h * n_h * w_pos_h;
 Ksa_h  =  M_h * n_h * w_pos_h^2;
